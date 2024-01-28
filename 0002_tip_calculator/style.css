@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: floralwhite;
+  font-family: "Halvetica", sans-serif;
+  background-image: url(d85993f1a7ac8b6235b2055ea5ec12a1.jpg);
+}
+.container {
+  background-color: #fcfcfc;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(14, 183, 234, 0.2);
+  border-radius: 10px;
+}
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+button {
+  background-color: rgb(99, 224, 224);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10 px 0;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.4s ease;
+}
+
+button:hover {
+  background-color: rgb(48, 124, 145);
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* insert img background  */
