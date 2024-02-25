@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <h1>Emoji Animations</h1>
+    <style>
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #2b1e1e;
+        background-color: #d7f9f4;
+        border-radius: 25px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        background-color: #d7f9f4;
+        border-radius: 34px;
+        perspective: 500px;
+      }
+      .container img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      #image1 {
+        transition: transform 0.3s ease-in-out;
+      }
+      #image1:hover {
+        transform: translate(-150px, -229px);
+      }
+      #image2 {
+        transition: transform 0.3s ease-in-out;
+      }
+      #image2:hover {
+        transform: scale(1.5, 1.05);
+      }
+
+      #image3 {
+        transition: transform 0.5s ease-in-out;
+      }
+      #image3:hover {
+        transform: rotate(360deg) scale(0.5, 0.5);
+      }
+      #image4 {
+        transition: transform 0.3s ease-in-out;
+      }
+      #image4:hover {
+        transform: skew(-40deg, 20deg);
+      }
+      #image5 {
+        transition: transform 0.8s ease-in-out;
+        transform-origin: top;
+      }
+      #image5:hover {
+        transform: rotate(1turn) scale(0.5, 0.5);
+      }
+      #image6 {
+        transition: transform 0.3s ease-in-out;
+      }
+      #image6:hover {
+        transform: rotateX(190deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- create five images 200px x 200px  -->
+      <img
+        id="image1"
+        src="https://is5-ssl.mzstatic.com/image/thumb/Purple62/v4/e3/da/d3/e3dad303-af47-fd37-d088-d44979322b1a/source/256x256bb.jpg"
+        alt="image"
+      />
+      <img
+        id="image2"
+        src="https://cdn.dribbble.com/users/2454973/screenshots/7139551/1_4x.jpg"
+        alt="image"
+      />
+      <img
+        id="image3"
+        src="https://th.bing.com/th/id/OIP.T8wL_nqjfHjGKkN5O4rm4AHaHa?rs=1&pid=ImgDetMain"
+        alt="image"
+      />
+      <img
+        id="image4"
+        src="https://i2.wp.com/www.papertraildesign.com/wp-content/uploads/2017/06/emoji-nerd-glasses.png"
+        alt="image"
+      />
+      <img
+        id="image5"
+        src="https://media.istockphoto.com/vectors/one-tooth-emoticon-vector-id1150785106?k=6&m=1150785106&s=612x612&w=0&h=2caVxZGo_acF6Fr22AzQFhrNz6eNBMgXrTrRo1-ZSos="
+        alt="image"
+      />
+
+      <img
+        id="image6"
+        src="https://m.media-amazon.com/images/I/6143dNX-g9L.png"
+        alt="image"
+      />
+    </div>
+  </body>
+</html>
